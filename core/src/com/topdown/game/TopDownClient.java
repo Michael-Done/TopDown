@@ -117,7 +117,7 @@ public class TopDownClient extends InputAdapter implements ApplicationListener {
 		table.row();
 		table.add(button);
 		table.row();
-		table.add(textIPAddress).width(275);
+		table.add(textIPAddress).width(270);
 		table.row();
 		table.pack();
 		table.setX(width / 2 - table.getWidth() / 2);
@@ -252,7 +252,7 @@ public class TopDownClient extends InputAdapter implements ApplicationListener {
 				sprite.draw(batch);
 				batch.end();
 			}
-			point.setPosition(thisPlayerPosition.x, thisPlayerPosition.y);
+			point.setPosition(thisPlayerPosition.x + 8, thisPlayerPosition.y + 7);
 			handler.setCombinedMatrix(camera);
 			handler.updateAndRender();
 			// Send a request for the rotation if the player is moving
